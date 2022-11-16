@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Parisienne&family=Poppins:wght@400;500&family=Sansita+Swashed&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Parisienne', cursive;;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.406)),url(../images/new-year.jpg) no-repeat, center;
+    background-size: cover;
+    color: white;
+}
+.container.wish{
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.406)),url(../images/2023-newYear.gif) no-repeat, center;
+    background-size: 100% 110%;
+}
+.count{
+    display: flex;
+    gap: 20px;
+}
+
+.countDownTxt{
+    font-size: 15px;
+}
+.newYearTxt{
+    font-size: 40px;
+    
+}
+.count{
+   font-size: 20px;
+}
+.days, .hours, .minutes, .seconds{
+    min-width: 50px;
+    max-width: 50px;
+}
+@media (min-width:556px){
+    .countDownTxt{
+        font-size: 25px;
+    }
+    .newYearTxt{
+        font-size: 60px;
+    }
+    .count{
+       font-size: 30px; 
+    }
+}
+@media (min-width:768px){
+    .countDownTxt{
+        font-size: 35px;
+    }
+    .newYearTxt{
+        font-size: 100px;
+    }
+    .count{
+        font-size: 40px;
+    }
+    .days, .hours, .minutes, .seconds{
+        min-width: 80px;
+        max-width: 80px;
+    }
+}
+@media (min-width:993px){
+    .days, .hours, .minutes, .seconds{
+        min-width: 90px;
+        max-width: 90px;
+    } 
+}
+.count div{
+    text-align: center;
+}
+.count div p{
+    background: rgba(255, 255, 0, 0.384);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: .5s;
+}
+.count div small{
+    font-size: 12px;
+    text-align: center;
+}
+.count p.yellow{
+    background: rgba(255, 255, 0, 0.384);
+}
+.count p.red{
+    background: rgba(255, 0, 0, 0.384);
+}
+.count p.pink{
+    background: rgba(255, 0, 230, 0.384);
+}
+.count p.orangered{
+    background: rgba(255, 85, 0, 0.384)
+}
+.count p.blue{
+    background: rgba(0, 106, 255, 0.384)
+}
+
+.countDownTxt.hide,
+.newYearTxt.hide,
+.count.hide{
+    display: none;
+}
