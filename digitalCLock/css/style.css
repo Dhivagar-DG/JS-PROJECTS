@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+@font-face {
+    font-family: digital-7;
+    src: url(digital-7/digital-7.ttf);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.951));
+}
+
+.clockFrame{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 30px solid rgb(144, 194, 63);
+    border-radius: 5px;
+    background: black;
+    position: relative;
+}
+
+.time div{
+    color: yellowgreen;
+    position: relative;
+}
+.time .hour::after,
+.minute::after,
+.second::after,
+.timePeriod::after{
+    content: '8';
+    position: absolute;
+    color: rgba(87, 87, 87, 0.17);
+    left: 0;
+}
+.time{
+    display: flex;
+    font-size: 40px;
+    font-family: digital-7;
+    position: absolute;
+    top: 30px;left: 20%;
+}
+.hour,.minute,.second{
+    min-width: 30px;
+}
+.time .colan{
+    margin-right: 10px;
+}
+.time .timePeriod{
+    margin-left: 10px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 5px;
+    right: -10px;
+    color: lightcoral;
+}
+.weekdays{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 5px;
+    left: 10%;
+    gap: 20px;
+}
+.weekdays div{
+    opacity: .2;
+    color: yellowgreen;
+}
+.month{
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+.month div{
+    color: yellowgreen;
+    opacity: .2;
+}
+.colan{
+    opacity: 0;
+    animation: blink .5s infinite alternate;
+}
+@keyframes blink{
+    to{
+        opacity: 1;
+    }
+}
+.date{
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 20%;
+    gap: 20px;
+    font-size: 18px;
+}
+.date div{
+    color: lightseagreen;
+    opacity: .8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
