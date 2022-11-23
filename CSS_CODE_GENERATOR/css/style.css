@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding: 3px;
+    color: aqua;
+    background: linear-gradient(45deg, purple, blueviolet);
+}
+.container{
+    width: 100vw;
+    height: 93vh;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.elementsBox{
+    width: 50%;
+    height: 100%;
+    background: gainsboro;
+}
+.elements-group{
+    margin-top: 2%;
+}
+.form-group{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+label{
+    width: 100%;
+    font-size: 20px;
+    color: blueviolet;
+}
+label > span{
+    display: inline-block;
+    margin-left: 15px;
+    background: rgb(89, 89, 89);
+    width: 55px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+}
+input[type="range"]{
+    margin-top: 8px;
+    outline: none;
+}
+select{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: purple;
+    border-radius: 5px;
+    border: 2px solid blueviolet;
+    outline: none;
+}
+textarea{
+    height: 100px;
+    resize: none;
+    padding: 20px;
+    color: purple;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    margin-top: 20px;
+}
+
+#copyBtn{
+    margin-top: 15px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: linear-gradient(-135deg, limegreen, blueviolet);
+    color: white;
+    outline: none;
+    border: 2px solid purple;
+    cursor: pointer;
+}
+#copyBtn:active{
+    background: linear-gradient(135deg, limegreen, blueviolet);
+    border: 2px inset;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background: rgb(100, 99, 99);
+    margin-right: 10%;
+}
